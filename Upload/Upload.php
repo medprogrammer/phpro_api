@@ -17,6 +17,9 @@ class Upload{
 	function get($key){
 		return $this->$key;
 	}
+	function getURL(){
+		return $this->upload_path.$this->file['name'];
+	}
 	function setType($type){
 		$this->type=$type;
 		switch($type){
